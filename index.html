@@ -1,213 +1,402 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>홍대 유흥 꿀팁 | bro가 알려주는 찐 홍대 밤문화</title>
+    <meta name="description" content="야, 홍대에서 제대로 놀고 싶냐? 클럽부터 술집까지 실전 꿀팁 다 모았다. 전화 010-6279-0862. 당장 터트려라.">
+    <meta name="keywords" content="홍대, 유흥, 꿀팁, 홍대클럽, 홍대술집, 홍대밤문화, bro">
+    <link rel="canonical" href="https://t3b04-hd-night-tip-2.vercel.app/">
+    <meta property="og:title" content="홍대 유흥 꿀팁 | bro가 알려주는 찐 홍대 밤문화">
+    <meta property="og:description" content="야, 홍대에서 제대로 놀고 싶냐? 클럽부터 술집까지 실전 꿀팁 다 모았다. 전화 010-6279-0862. 당장 터트려라.">
+    <meta property="og:url" content="https://t3b04-hd-night-tip-2.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='400' font-family='Impact' font-size='120' fill='%23ff3b00' font-weight='bold' transform='rotate(-5,60,400)'%3EHONGDAE NIGHT%3C/text%3E%3C/svg%3E">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="홍대 유흥 꿀팁 | bro가 알려주는 찐 홍대 밤문화">
+    <meta name="twitter:description" content="야, 홍대에서 제대로 놀고 싶냐? 클럽부터 술집까지 실전 꿀팁 다 모았다. 전화 010-6279-0862. 당장 터트려라.">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='400' font-family='Impact' font-size='120' fill='%23ff3b00' font-weight='bold' transform='rotate(-5,60,400)'%3EHONGDAE NIGHT%3C/text%3E%3C/svg%3E">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "홍대 유흥 꿀팁",
+            "url": "https://t3b04-hd-night-tip-2.vercel.app/",
+            "description": "야, 홍대에서 제대로 놀고 싶냐? 클럽부터 술집까지 실전 꿀팁 다 모았다. 전화 010-6279-0862. 당장 터트려라.",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://t3b04-hd-night-tip-2.vercel.app/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <style>
+        /* === RESET === */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: Impact, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.2;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4 {
+            font-family: Impact, system-ui, sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        h1 { font-size: clamp(3.5rem, 12vw, 7rem); line-height: 0.9; }
+        h2 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 0.95; }
+        h3 { font-size: clamp(1.8rem, 5vw, 3rem); }
+        h4 { font-size: clamp(1.2rem, 3vw, 2rem); }
+        p, li, a, blockquote { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 700; }
+        strong { color: #ff3b00; }
+
+        /* === LAYOUT === */
+        .container { padding: 48px 24px; max-width: 100%; margin: 0 auto; }
+        .section { padding: 80px 0; border-bottom: 4px solid #ff3b00; }
+        .section:last-child { border-bottom: none; }
+        .grid { display: grid; gap: 32px; grid-template-columns: 1fr; }
+        .flex { display: flex; flex-wrap: wrap; gap: 32px; align-items: center; }
+        .asymmetric { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 32px; }
+        .overlap { position: relative; margin: -40px 0 0 -20px; z-index: 2; }
+
+        /* === HEADER & NAV === */
+        header {
+            background: #000;
+            border-bottom: 4px solid #ff3b00;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            max-width: 100%;
+        }
+        .logo { font-size: 2rem; color: #ff3b00; text-decoration: none; letter-spacing: -0.05em; transform: rotate(-2deg); display: inline-block; }
+        .logo span { color: #fff; }
+        nav { display: flex; gap: 32px; align-items: center; }
+        nav a { color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; border-bottom: 3px solid transparent; padding-bottom: 4px; transition: 0.2s; }
+        nav a:hover { border-color: #ff3b00; color: #ff3b00; }
+        .nav-cta { background: #ff3b00; color: #000 !important; padding: 8px 24px; border: none; font-weight: 900; transform: skew(-5deg); }
+
+        /* Hamburger */
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 6px; background: none; border: none; padding: 0; }
+        .hamburger span { display: block; width: 32px; height: 4px; background: #fff; border-radius: 0; }
+        #nav-toggle { display: none; }
+
+        /* === HERO === */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #000;
+            border-bottom: 4px solid #ff3b00;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%; left: -10%;
+            width: 60%; height: 80%;
+            background: repeating-linear-gradient(45deg, #ff3b00 0px, #ff3b00 4px, transparent 4px, transparent 12px);
+            opacity: 0.15;
+            transform: rotate(12deg);
+            pointer-events: none;
+        }
+        .hero-content { position: relative; z-index: 2; max-width: 100%; padding: 0 24px; }
+        .hero h1 { color: #fff; text-shadow: 6px 6px 0 #ff3b00; margin-bottom: 16px; }
+        .hero p { font-size: 1.8rem; color: #ff3b00; margin-bottom: 32px; font-weight: 700; }
+        .hero .btn {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000;
+            padding: 16px 64px;
+            font-size: 2rem;
+            font-weight: 900;
+            text-decoration: none;
+            border: 4px solid #fff;
+            transform: rotate(-2deg);
+            transition: 0.2s;
+            font-family: Impact, system-ui, sans-serif;
+            text-transform: uppercase;
+        }
+        .hero .btn:hover { transform: rotate(2deg) scale(1.02); background: #fff; color: #000; border-color: #ff3b00; }
+
+        /* === REVIEW CARDS === */
+        .review-grid { display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+        .review-card {
+            background: #111;
+            border: 4px solid #ff3b00;
+            padding: 32px;
+            position: relative;
+            transform: rotate(var(--rot, 0deg));
+            transition: 0.2s;
+        }
+        .review-card:nth-child(odd) { --rot: -1deg; }
+        .review-card:nth-child(even) { --rot: 1.5deg; }
+        .review-card:hover { transform: rotate(0deg) scale(1.02); border-color: #fff; }
+        .review-card .stars { color: #ff3b00; font-size: 1.8rem; letter-spacing: 4px; }
+        .review-card blockquote { font-size: 1.3rem; margin: 16px 0; font-style: normal; color: #ccc; }
+        .review-card .author { display: flex; justify-content: space-between; align-items: center; font-size: 1rem; color: #888; border-top: 2px solid #333; padding-top: 12px; margin-top: 12px; }
+        .review-card .author strong { color: #fff; }
+
+        /* === TIPS SECTION === */
+        .tip-block {
+            background: #0a0a0a;
+            border-left: 8px solid #ff3b00;
+            padding: 32px 48px;
+            margin-bottom: 32px;
+            position: relative;
+        }
+        .tip-block::before {
+            content: '🔥';
+            position: absolute;
+            top: -16px; right: -16px;
+            font-size: 3rem;
+            transform: rotate(15deg);
+        }
+        .tip-block h3 { color: #ff3b00; margin-bottom: 8px; }
+        .tip-block p { font-size: 1.2rem; color: #ddd; }
+
+        /* === CONTACT === */
+        .contact-block {
+            background: #ff3b00;
+            color: #000;
+            padding: 48px;
+            text-align: center;
+            border: 4px solid #fff;
+            transform: skew(-1deg);
+        }
+        .contact-block a { color: #000; font-size: 2.5rem; font-weight: 900; text-decoration: none; border-bottom: 4px solid #000; }
+        .contact-block a:hover { border-color: #fff; color: #fff; }
+
+        /* === FOOTER === */
+        footer {
+            background: #000;
+            border-top: 4px solid #ff3b00;
+            padding: 48px 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+        }
+        footer span { color: #ff3b00; }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .container { padding: 32px 16px; }
+            .section { padding: 48px 0; }
+            .asymmetric { grid-template-columns: 1fr; }
+            .hamburger { display: flex; }
+            nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #000; border-bottom: 4px solid #ff3b00; padding: 24px; gap: 16px; }
+            #nav-toggle:checked + .hamburger + nav { display: flex; }
+            .hero h1 { font-size: 3.5rem; }
+            .hero p { font-size: 1.2rem; }
+            .hero .btn { padding: 16px 32px; font-size: 1.5rem; }
+            .review-card { transform: none !important; }
+            .tip-block { padding: 24px; }
+            .contact-block a { font-size: 1.8rem; }
+            .logo { font-size: 1.5rem; }
+        }
+
+        /* === UTILITY RAW === */
+        .border-accent { border: 4px solid #ff3b00; }
+        .bg-accent { background: #ff3b00; color: #000; }
+        .text-accent { color: #ff3b00; }
+        .skew { transform: skew(-3deg); }
+        .rotate-neg { transform: rotate(-2deg); }
+        .rotate-pos { transform: rotate(2deg); }
+        .full-bleed { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
+        .no-round { border-radius: 0 !important; }
+    </style>
 </head>
 <body>
-  <div class="container">
+
+    <!-- HEADER -->
     <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+        <a href="/" class="logo">HONGDAE<span>NIGHT</span></a>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </label>
+        <nav>
+            <a href="#reviews">리뷰</a>
+            <a href="#tips">꿀팁</a>
+            <a href="#contact" class="nav-cta">전화걸기</a>
+        </nav>
     </header>
+
     <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>홍대 <strong>유흥</strong> 꿀팁</h1>
+                <p>🔥 bro가 다 털어준다 🔥</p>
+                <a href="tel:01062790862" class="btn">📞 010-6279-0862</a>
+                <div style="margin-top: 24px; font-size: 1.2rem; color: #888;">진짜 홍대 밤문화, 여기 다 있다</div>
+            </div>
+        </section>
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
+        <!-- REVIEWS -->
+        <section id="reviews" class="section container">
+            <h2 style="margin-bottom: 48px; border-left: 8px solid #ff3b00; padding-left: 24px;">💬 찐 리뷰 <span style="display: block; font-size: 1.2rem; color: #888; text-transform: none;">유흥러들이 직접 평가했다</span></h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <blockquote>“야 여기 꿀팁 개좋다. 클럽 입성 꿀팁 보고 바로 써먹음. bro 인정”</blockquote>
+                    <div class="author"><strong>홍대밤도사</strong> <span>2025-02-14</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>“술값 아끼는 법 ㄹㅇ 실화? 이거 보고 홍대에서 3만원으로 2차 감”</blockquote>
+                    <div class="author"><strong>클럽킹99</strong> <span>2025-02-10</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <blockquote>“여기만의 노하우가 있다. 특히 홍대입구역에서 클럽까지 빠른 루트 개꿀”</blockquote>
+                    <div class="author"><strong>술고래형</strong> <span>2025-02-05</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>“전화 한 통이면 모든 게 해결됨. bro가 진짜다.”</blockquote>
+                    <div class="author"><strong>나이트메어</strong> <span>2025-01-28</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <blockquote>“처음 홍대 왔는데 여기 보고 완벽히 즐겼다. 강추”</blockquote>
+                    <div class="author"><strong>지방러탈출</strong> <span>2025-01-20</span></div>
+                </div>
+            </div>
+        </section>
 
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
+        <!-- TIPS -->
+        <section id="tips" class="section container">
+            <h2 style="margin-bottom: 48px; border-right: 8px solid #ff3b00; padding-right: 24px; text-align: right;">🎯 실전 꿀팁 <span style="display: block; font-size: 1.2rem; color: #888; text-transform: none;">bro만 아는 노하우</span></h2>
+            <div class="tip-block">
+                <h3>🔞 클럽 입장 꿀팁</h3>
+                <p>일찍 가면 줄 없고, 여자랑 가면 반값. 근데 진짜 꿀은 <strong>전화 한 통</strong>이면 게스트 리스트에 이름 올려준다. 010-6279-0862로 당장 문의해라.</p>
+            </div>
+            <div class="tip-block">
+                <h3>🍺 술값 30% 아끼는 법</h3>
+                <p>홍대 주점은 대부분 테이블 차지가 있다. 근데 <strong>bro</strong>가 소개해주는 곳은 차지도 없고 안주도 두 배. 현지인만 아는 스팟이다.</p>
+            </div>
+            <div class="tip-block">
+                <h3>🥳 2차 장소 추천</h3>
+                <p>클럽 끝나고 갈 만한 숨은 포차. 늦은 시간까지 영업하고 가격도
 
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
 
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
       
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">&quot;홍대 상권 변곡점, 폐업 업소와 살아남은 가게의 비결&quot;</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목 창작 #### 구체적 니치 콘텐츠 작성 서비스업계·로컬비즈니스 뒷이야기 / 유흥업소 가격결정 아, 진짜... 홍대 상권에서 최근 폐업한 업소들의 공통된 원인과 살아남은 곳들의 차별화 전략을 파헤쳐보겠습니다. 이 글에서는 임대차 계약 전문가의 시각으로, 권리</p>
       </div>
-    </footer>
+      <a href="posts/field_note-002-1nicaoe.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">홍대 유흥 꿀팁 솔직 후기 — 3개월 써본 사람의 리얼 리뷰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목: 창작한 제목"권리금 2억 받고 나간 가게의 실거래 내역서 — 유흥업소 가격대별 원가 구조와 마진율 분석" 아, 진짜... 홍대 유흥 꿀팁을 찾는 다크로버들은 여기에 있습니다. 오늘은 임대차 계약 전문가의 시점에서 비용과 시간, 위험을 동시에 비교하는 실용</p>
+      </div>
+      <a href="posts/review-001-1nicaoe.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-05">2026-06-05</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">홍대 유흥 꿀팁 솔직 후기 - 3개월 써본 사람의 리얼 리뷰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 소개홍대 유흥을 즐기고 싶지만, 막상 가면 어디부터 시작해야 할지 모르겠다는 분들을 위해 이 포스트를 작성했습니다. 저는 3개월 동안 홍대 유흥을 즐기며 다양한 꿀팁을 찾아냈고, 오늘은 그 경험을 공유하려고 합니다. 특히, 룸 단위 서비스업에서 가격대별 원가 구조</p>
+      </div>
+      <a href="posts/review-001.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>

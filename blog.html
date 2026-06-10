@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>홍대 유흥 꿀팁 | bro가 알려주는 찐 홍대 밤문화</title>
+    <meta name="description" content="야, 홍대에서 제대로 놀고 싶냐? 클럽부터 술집까지 실전 꿀팁 다 모았다. 전화 010-6279-0862. 당장 터트려라.">
+    <meta name="keywords" content="홍대, 유흥, 꿀팁, 홍대클럽, 홍대술집, 홍대밤문화, bro">
+    <link rel="canonical" href="https://t3b04-hd-night-tip-2.vercel.app/">
+    <meta property="og:title" content="홍대 유흥 꿀팁 | bro가 알려주는 찐 홍대 밤문화">
+    <meta property="og:description" content="야, 홍대에서 제대로 놀고 싶냐? 클럽부터 술집까지 실전 꿀팁 다 모았다. 전화 010-6279-0862. 당장 터트려라.">
+    <meta property="og:url" content="https://t3b04-hd-night-tip-2.vercel.app/">
+    <style>
+        /* === RESET === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            color: #ff0055;
+            text-shadow: 0 0 20px rgba(255,0,85,0.5);
+        }
+        h2 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: #ff6600;
+            border-left: 6px solid #ff6600;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #ffe600;
+        }
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            color: #00e5ff;
+        }
+        p, li, a, blockquote {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        strong {
+            color: #ff0055;
+            font-weight: 900;
+        }
+        /* === LAYOUT === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #222;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        /* === NAV === */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ff0055;
+        }
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ffe600;
+            text-decoration: none;
+            letter-spacing: -0.05em;
+        }
+        nav .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        nav .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            transition: color 0.3s;
+        }
+        nav .nav-links a:hover {
+            color: #ff6600;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: #ffe600;
+            border-radius: 2px;
+        }
+        /* === HERO === */
+        .hero {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #ff0055, #ff6600, #ffe600);
+        }
+        .hero h1 {
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            color: #aaa;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .hero .tel-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 2.5rem;
+            background: #ff0055;
+            color: #fff;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 0;
+            font-size: 1.3rem;
+            border: 2px solid #ff0055;
+            transition: all 0.3s;
+        }
+        .hero .tel-link:hover {
+            background: transparent;
+            color: #ff0055;
+        }
+        /* === BLOG POST === */
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-post .meta {
+            font-size: 0.85rem;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .blog-post .meta span {
+            display: inline-block;
+        }
+        .blog-post .content {
+            background: #111;
+            padding: 2.5rem;
+            border: 1px solid #222;
+        }
+        .blog-post .content p {
+            margin-bottom: 1.5rem;
+            color: #ccc;
+        }
+        .blog-post .content blockquote {
+            border-left: 4px solid #ff6600;
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #999;
+        }
+        .blog-post .content ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            list-style: square;
+        }
+        .blog-post .content ul li {
+            margin-bottom: 0.8rem;
+            color: #bbb;
+        }
+        .blog-post .content h3 {
+            margin-top: 2.5rem;
+        }
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            nav .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #0a0a0a;
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 1.2rem;
+                border-bottom: 2px solid #ff0055;
+            }
+            nav .nav-links.active {
+                display: flex;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+            .hero {
+                padding: 6rem 0 3rem;
+            }
+            .blog-post .content {
+                padding: 1.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <a href="/" class="logo">BRO.</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">홈</a></li>
+            <li><a href="/about">어바웃</a></li>
+            <li><a href="/blog">블로그</a></li>
+            <li><a href="/contact">연락처</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>🔥 홍대 찐 블로그</h1>
+            <p>야, 이건 그냥 글이 아니야. 홍대 밤을 지배하는 방법을 원한다면 제대로 읽어라.</p>
+            <a href="tel:010-6279-0862" class="tel-link">📞 전화 010-6279-0862</a>
+        </div>
+    </section>
+
+    <!-- BLOG POST SECTION -->
+    <section class="section">
+        <div class="container blog-post">
+            <h2>홍대 클럽 입장 꿀팁: 줄 서지 않고 들어가는 법</h2>
+            <div class="meta">
+                <span>2025.02.10</span>
+                <span>by bro</span>
+                <span>#클럽 #꿀팁</span>
+            </div>
+            <div class="content">
+                <p>야, 홍대 클럽 앞에서 30분씩 줄 서는 꼴 보면 한숨부터 나온다. bro가 확실하게 알려준다. <strong>줄 서지 않고 들어가는 3가지 방법</strong> – 이거 모르면 너만 손해다.</p>
+                <p>첫째, <strong>게스트 리스트</strong>를 활용해라. 대부분 홍대 클럽은 인스타 DM이나 전화로 게스트 등록 받는다. 이름, 인원수만 알려주면 바로 입장. 전화 010-6279-0862로 찍으면 bro가 바로 리스트에 올려준다.</p>
+                <blockquote>“게스트 리스트는 성공의 지름길이다. 그냥 입장료 내고 줄 서는 새끼들은 멍청이다.”</blockquote>
+                <p>둘째, <strong>얼리 버드</strong>를 노려라. 오후 10시 전에 도착하면 입장료 반값, 줄도 없다. 진짜 클럽은 새벽 1시부터 미친다지만, <strong>10시부터 12시 사이에 입장</strong>하면 자리도 잡고 분위기도 적응하기 좋다.</p>
+                <p>셋째, <strong>여성 동행</strong>을 만들어라. 현실이지만 여성 1명 이상 있으면 입장이 훨씬 쉽다. 주변에 여사친 있으면 꼭 데려가라. 없으면? 위에 전화해라. bro가 어떻게든 해준다.</p>
+                <h3>추가 팁: 드레스 코드</h3>
+                <ul>
+                    <li>운동화? 가급적 단화 or 깔끔한 스니커즈. 슬리퍼X</li>
+                    <li>모자? 뒤로 쓰면 입장 거절 당할 수 있다. 정방향으로</li>
+                    <li>향수? 너무 과하면 오히려 역효과. 은은하게 한 방</li>
+                </ul>
+                <p>이거 다 적용하고도 안 되면? <strong>010-6279-0862</strong>로 전화해라. 직접 클럽 MD 연결해준다. 야, 입장 하나 제대로 못 하면 밤새 후회한다. 지금 당장 움직여라.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" style="text-align:center;">
+        <div class="container">
+            <h2>바로 전화해라</h2>
+            <p style="font-size:1.5rem; margin-bottom:2rem;">진짜 원한다면 망설이지 마라. bro가 다 해결해준다.</p>
+            <a href="tel:010-6279-0862" class="tel-link" style="font-size:2rem; padding:1rem 3rem;">📞 010-6279-0862</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
